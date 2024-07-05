@@ -22,4 +22,8 @@ describe("DOM tests", () => {
         expect(document.getElementById("par")
             .innerHTML).toEqual("You Clicked");
     });
+    test('h1 should exist', () => {
+        //gets all h1 elements and puts in array with .length counting # of items in array
+        expect(document.getElementsByTagName('h1').length).toBe(1);
+    })
 })
